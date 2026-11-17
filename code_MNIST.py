@@ -148,8 +148,8 @@ plt.show()
 
 # Plot gap versus n1
 plt.figure()    
-plt.plot(n1_list,np.log(gap),marker='.',markersize=marksize,markerfacecolor="None")
-plt.xlabel("$n_1$",fontsize=fontsize)
+plt.plot(np.log(n1_list),np.log(gap),marker='.',markersize=marksize,markerfacecolor="None")
+plt.xlabel("$\ln (n_1)$",fontsize=fontsize)
 plt.ylabel("$\ln(B_{RW}-B_{R})$",fontsize=fontsize)
 plt.show()
     

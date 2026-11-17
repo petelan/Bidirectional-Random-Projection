@@ -41,7 +41,7 @@ n,p = X.shape
 p1_per = 0.25
 n1_per_list = [0.025,0.05,0.075,0.1,0.125,0.15]
 
-num_trial = 10
+num_trial = 1000
 
 # OLS model 
 model = LinearRegression(fit_intercept=False)
@@ -127,8 +127,8 @@ plt.show()
 
 # Plot gap versus n1
 plt.figure()    
-plt.plot(n1_list,np.log(gap),marker='.',markersize=marksize,markerfacecolor="None")
-plt.xlabel("$n_1$",fontsize=fontsize)
+plt.plot(np.log(n1_list),np.log(gap),marker='.',markersize=marksize,markerfacecolor="None")
+plt.xlabel("$\ln (n_1)$",fontsize=fontsize)
 plt.ylabel("$\ln(B_{RW}-B_{R})$",fontsize=fontsize)
 plt.show()
 
